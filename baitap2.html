@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="nhap1" type="number">
+    <input id="nhap2" type="number" >
+    <button onclick="plus()">cộng</button>
+    <button onclick="apartfrom()">trừ</button>
+    <button onclick="core()">nhân</button>
+    <button onclick="divide()">chia</button>
+    <P id="tong">0</P>
+    
+</body>
+</html>
+
+<script>
+    function plus(){
+        let number1 = document.getElementById("nhap1").value;
+        let number2 = document.getElementById("nhap2").value;
+        let result = +number1 + +number2;
+        
+
+        document.getElementById("tong").innerHTML = result;
+        
+    }
+    function apartfrom(){
+        let number1 =document.getElementById("nhap1").value;
+        let number2 =document.getElementById("nhap2").value;
+        let result=+number1 - +number2;
+        document.getElementById("tong").innerHTML=result;
+    }
+    function core(){
+        let number1=document.getElementById("nhap1").value;
+        let number2=document.getElementById("nhap2").value;
+        let result=+number1 * +number2;
+        document.getElementById("tong").innerHTML=result;
+    }
+    function divide(){
+        let number1=document.getElementById("nhap1").value;
+        let number2=document.getElementById("nhap2").value;
+        let result=+number1/+number2;
+        document.getElementById("tong").innerHTML=result;
+    }
+
+    
+</script>
