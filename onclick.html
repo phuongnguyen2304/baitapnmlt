@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+<p onclick="do-something()">Click me</p>
+<p id="demo">Click</p>
+
+</body>
+</html>
+<script>
+    function do-something(){
+        alert("hello world");
+    }
+    var demo=document.getElementById("demo");
+    demo.addEventListenner("click",clickFunction);
+    
+</script>

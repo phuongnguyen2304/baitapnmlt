@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hello</title>
+</head>
+<body>
+  <!--hien thi ket qua hàm alert-->
+  <button type="button"onclick="showMessage();">Click Me !</button>
+  <script>
+    function showMessage (){
+        alert('xin chào hello ')
+    }
+  </script>
+
+   <!--hien thi ket qua sử dụng thẻ Html-->
+   <div id="messageDiv"></div>
+   <button type="button"onclick="showMessage();">Click Me !</button>
+   <script>
+    function showMessage(){
+        document.getElementById('messageDiv').innerHTML='xin chào';
+    }
+   </script>
+   <!--hien thi ket qua hàm document.vrice-->
+   <button type="button"onclick="showMessage();">Click Me !</button>
+   <script>
+    function showMessage(){
+        Document.write('xin chào');
+   </script>
+
+ 
+</body>
+</html>
