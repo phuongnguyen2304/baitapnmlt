@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="choi()">chơi</button>
+</body>
+</html>
+<script>
+    function choi(){
+        let soMax = parseInt(prompt("nhap vao so giới hạn"));
+        let ketQua = Math.floor(Math.random()* soMax) + 1;
+        let solan = 1;
+        while (solan <= 3){
+            let soDoan = parseInt(prompt("nhap ket quả"));
+                if(soDoan > ketQua){
+                    alert("số bạn đoán lớn hơn ket quả");
+                }else if(soDoan < ketQua){
+                    alert("số bạn đoán nhỏ hơn kết quả");
+                }else{
+                    alert("chúc mừng bạn đã đoán đúng : " + ketQua);
+                    break;
+                }
+        }
+        document.write(ketQua);
+    }
+</script>
